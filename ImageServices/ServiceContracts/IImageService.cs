@@ -29,8 +29,8 @@ namespace ImageServices.ServiceContracts
 		[OperationContract, WebInvoke(UriTemplate = "Remove/{creativeWorkGuid}/{ImageNumber}")]
 		bool Renive(Guid creativeWorkId, byte imageNumber);
 
-		[OperationContract, WebInvoke(UriTemplate = "Permissions/{CreativeWorkGuid}")]
-		bool Permissions(Guid CreativeWorkId /* , TBD criteria */ d)
+		[OperationContract, WebInvoke(UriTemplate = "Permissions/{CreativeWorkGuid}/?")]
+		bool Permissions(Guid creativeWorkId /* , TBD criteria */);
 	}
 }
 

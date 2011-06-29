@@ -41,15 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzureImageHandler.cs" />
-    <Compile Include="MainApp.cs" />
-    <Compile Include="FileSystemImageHandler.cs" />
     <Compile Include="ImageContainer.cs" />
-    <Compile Include="ImageHandler.cs" />
-    <Compile Include="OpenStackImageHandler.cs" />
     <Compile Include="Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StorageProvider.cs" />
+    <Compile Include="StorageHandlers\AzureImageHandler.cs" />
+    <Compile Include="StorageHandlers\FileSystemImageHandler.cs" />
+    <Compile Include="StorageHandlers\ImageHandler.cs" />
+    <Compile Include="StorageHandlers\OpenStackImageHandler.cs" />
+    <Compile Include="StorageProviderType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

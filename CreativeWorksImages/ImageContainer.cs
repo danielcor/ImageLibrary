@@ -6,9 +6,15 @@ namespace Images
 	/// <summary>
 	/// The 'Product' class
 	/// </summary>
-	internal class ImageContainer
+	public class ImageContainer
 	{
 		private readonly StorageProviderType _storageProvider;
+		public Guid imageGuid;
+		public string fileName;
+
+		// TODO: // Need to have in here, enough information to construct an URL, or even store the URL,
+		// TODO: // Need to have enough inforation here so that this library can find the images.. to delete, move them to an alternate provider, etc.
+		// TODO: // No matter which provider we are using.
 
 		// Constructor
 		public ImageContainer(StorageProviderType storageProvider)
